@@ -2,14 +2,11 @@
 #      Attention si la chaîne est invalide, un message d'erreur est attendu.
 
 print("Résultat du pays:", end=" ")
-medals = {"G":0, "S":0, "B":0}
-for medal in input():
-    if medal in medals:
-        medals[medal]+=1
-    else:
-        medals = None
-if medals != None:
-    print(f"Médailles:\n- Or: {medals['G']}\n- Argent: {medals['S']}\n- Bronze: {medals['B']}")
-else:
+medals = input()
+gold, silver, bronze = medals.count("G"), medals.count("S"), medals.count("B")
+if len(medals) > gold+silver+bronze:
     print("Veuillez entrer une chaîne valide.")
+else:
+    print(f"Médailles:\n- Or: {gold}\n- Argent: {silver}\n- Bronze: {bronze}")
+
 
