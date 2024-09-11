@@ -8,3 +8,4 @@ categorie = input('Dans quelle catégorie spécifique? ')
 record = input('Quel est le record? ')
 
 print(f'Nouveau record: \n -------- \n {date} \n {discipline} - {categorie} \n {athlete} {country} - {record}')
+
