@@ -3,8 +3,8 @@
 #        et affiche le résultat au format "XX km".
 #        Assurez une gestion du pourcentage valide au cours de votre programme (% toujours dans [0 ; 100]).
 
-print("Pourcentage de batterie ? ", end=" ")
-pourcentage = int(input())
+
+pourcentage = float(input('Pourcentage de batterie ? '))
 map = { 50:2, 25:0.5, 10:1, 5:2.5, 0:6 }
 autonomie = 0
 
@@ -14,6 +14,6 @@ for key in sorted(list(map.keys()))[::-1]:
         pourcentage = key
 
 if autonomie!=0:
-    print(f"La distance possible est de {autonomie} km")
+    print(f"{autonomie} km")
 else:
-    print(f"La batterie est vide\n")
+    print(f"La batterie est vide")
