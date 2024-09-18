@@ -3,7 +3,7 @@
 import math
 speed = float(input('Vitesse initiale (m/s): '))
 angle = math.radians(float(input('Angle de lancer (en degrés): ')))
-g = 9.81
+g = 9.8
 
 distance = round(((speed**2)*(math.sin(angle*2)))/g, 2)
-print(distance)
+print(f'Distance parcourue: {distance}m')

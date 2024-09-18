@@ -1,7 +1,11 @@
 # TODO: Créer un script pour calculer les ressources nécessaires pour assainir la Seine.
 # TODO: Importer les modules nécessaires.
 
-print("Quantité d'eau à assainir (en L):", end=" ")
+print("Quelle quantité d'eau faut-il assainir ? ", end='')
+
 portionsEau = int(input())/5
-print(f"Voici les matériaux requis pour l'assainissement de 10L d'eau:\n- {portionsEau} filtres\n- {portionsEau*3} lampes UV\n- {portionsEau/2}kg de chlore")
+print(f'''Voici les éléments requis pour assainir {portionsEau}L d'eau:\n
+\t- Filtre(s) : {portionsEau}\n 
+\t- Lampe(s) UV : {portionsEau*3}\n
+\t- Chlore : {portionsEau/2}kg\n''')
 
